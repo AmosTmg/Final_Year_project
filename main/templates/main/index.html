@@ -1,0 +1,106 @@
+{% extends 'main/homebase.html' %}
+{% load static %}
+{% block content %}
+
+
+<head>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "../static/images/img.png" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
+    }
+
+    .jumbotron h5,
+    h3 {
+      text-align: center;
+    }
+
+
+    .alert {
+      margin: 0px;
+    }
+
+    .middleman{
+      height:1000px;
+      width: auto;
+      padding-top: 50px;
+      background-color: #f7f5f5;
+    }
+
+    .para1{
+      font-size: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 100px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .para2{
+      font-size: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      margin-bottom: 200px;
+    }
+
+   .para3{
+    font-size: 20px;
+    margin-top: 300px;
+    margin-left: 50px;
+    margin-left: 30px;
+   }
+    .sideimg{
+      float: left;
+      height: 300px;
+      width: auto;
+      padding-left: 50px;
+      padding-right: 30px;
+    }
+
+    .sideimg1{
+      float: right;
+      height: 300px;
+      width: auto;
+      padding-right: 30px;
+    
+    }
+  
+  </style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+  <br>
+  <!-- <h5 class="display-3 glow">You’ll Love the Way We Care for You</h5> -->
+  <br><br><br><br><br>
+  <p>
+  <h3>Emergency ?</h3>
+
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/patientclick" role="button">Take Appointment
+    </a>
+  </p>
+  <br><br>
+</div>
+
+<div class="middleman">
+  <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+
+  <img src="../static/images/asdf.png" alt="hands" class="sideimg">
+
+  <p class = "para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+
+  <img src="../static/images/asdf.png" alt="hands" class="sideimg1">
+
+  <p class="para3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+</div>
+
+<br><br><br><br>
+
+{% include "main/admin_doctor_patient_card.html" %}
+<br><br><br>
+{% endblock content %}
