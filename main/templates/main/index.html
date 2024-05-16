@@ -4,10 +4,14 @@
 
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@300;400;700&family=Kaushan+Script&display=swap" rel="stylesheet">
   <style media="screen">
     .jumbotron {
       margin-top: 0px;
       margin-bottom: 0px;
+      padding-top:50px;
       background-image: url('{% static "../static/images/img.png" %}');
       background-size: cover;
       background-repeat: no-repeat;
@@ -25,46 +29,57 @@
     }
 
     .middleman{
-      height:1000px;
+      height:1350px;
       width: auto;
       padding-top: 50px;
       background-color: #f7f5f5;
     }
 
     .para1{
-      font-size: 20px;
+      font-size: 50px;
       padding-bottom: 20px;
       margin-bottom: 100px;
       padding-left: 30px;
       padding-right: 30px;
+      font-weight:bold;
+      color:#7db6c2;
+      font-family: "Kaushan Script", cursive;
     }
 
     .para2{
-      font-size: 20px;
-      padding-top: 20px;
-      padding-right: 20px;
+      font-size: 30px;
+      padding-top: 180px;
+      padding-right: 100px;
       margin-bottom: 200px;
+      font-weight:bold;
+      color:black;
+      font-family: "Kaushan Script", cursive;
     }
 
    .para3{
-    font-size: 20px;
-    margin-top: 300px;
-    margin-left: 50px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin-top: 450px;
+    margin-left: 100px;
+    margin-right:100px;
+    font-weight:bold;
+    font-family: "Kaushan Script", cursive;
+    
    }
     .sideimg{
       float: left;
-      height: 300px;
-      width: auto;
-      padding-left: 50px;
+      height: 520px;
+      width: 500px;
+      padding-left: 100px;
       padding-right: 30px;
     }
 
     .sideimg1{
       float: right;
-      height: 300px;
-      width: auto;
-      padding-right: 30px;
+      height: 520px;
+      width: 450px;
+      margin-left:50px;
+      padding-right: 100px;
+      paddinf-left:200px;
     
     }
   
@@ -75,7 +90,6 @@
 
 <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
   <br>
-  <!-- <h5 class="display-3 glow">You’ll Love the Way We Care for You</h5> -->
   <br><br><br><br><br>
   <p>
   <h3>Emergency ?</h3>
@@ -88,17 +102,18 @@
 </div>
 
 <div class="middleman">
-  <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+  <p class="para1">
+    Improving healthcare experience for all.
+  </p>
 
-  <img src="../static/images/asdf.png" alt="hands" class="sideimg">
+  <img src="../static/images/side1.png" alt="hands" class="sideimg">
 
-  <p class = "para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+  <p class = "para2">"Life may be unpredictable, but the love and care we receive in the hospital remind us that we’re never alone."</p>
 
-  <img src="../static/images/asdf.png" alt="hands" class="sideimg1">
+  <img src="../static/images/side2.png" alt="hands" class="sideimg1">
 
-  <p class="para3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</p>
+  <p class="para3">"Sometimes the greatest miracles happen within the walls of a hospital."</p>
 </div>
-
 <br><br><br><br>
 
 {% include "main/admin_doctor_patient_card.html" %}
